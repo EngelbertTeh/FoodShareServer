@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>org.foodshare.backend</groupId>
 	<artifactId>foodshare-backend</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version> <!-- removed -SNAPSHOT -->
 	<name>FoodShareBackend</name>
 	<description>The backend server catering for both webapp and mobile frontends</description>
 	<properties>
