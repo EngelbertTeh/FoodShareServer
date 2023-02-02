@@ -10,6 +10,7 @@ public class FoodShareBackendApplication {
 		SpringApplication.run(FoodShareBackendApplication.class, args);
 	}
 	
-	
+
 
 }
+
