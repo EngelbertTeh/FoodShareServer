@@ -1,0 +1,26 @@
+server:
+  servlet:
+    context-path: /card-service
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql:///postgres
+    username: postgres
+    password: cardpassword
+    hikari:
+      minimum-idle: 2
+      maximum-pool-size: 5
+      data-source-properties:
+        socketFactory: com.google.cloud.sql.postgres.SocketFactory
+        cloudSqlInstance: foodshare-376109:asia-southeast2:card-db
+        enableIamAuth: true
+        sslmode: disable
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        sql-dialect: org.hibernate.dialect.PostgreSQL10Dialect
+      
