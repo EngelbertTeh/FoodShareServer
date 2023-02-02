@@ -52,7 +52,7 @@ on:
 env:
   PROJECT_ID: foodshare-376109 # TODO: update Google Cloud project id
   GAR_LOCATION: asia-southeast2 # TODO: update Artifact Registry location
-  SERVICE: food-share-server # TODO: update Cloud Run service name
+  SERVICE: FoodShareServer # TODO: update Cloud Run service name
   REGION: asia-southeast2 # TODO: update Cloud Run service region
 
 jobs:
