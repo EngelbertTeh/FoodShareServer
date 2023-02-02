@@ -123,12 +123,6 @@ jobs:
             --region ${{ env.REGION }} \
             --project ${{ env.PROJECT_ID }} \
             --format json \
-            --update-env-vars SERVICE_NAME="food-share-server" \
-            --update-secrets DB_DATABASE=DB_DATABASE:latest \
-            --update-secrets DB_USERNAME=DB_USERNAME:2 \
-            --update-secrets DB_PASSWORD=DB_PASSWORD:2 \
-            --update-secrets DB_CLOUD_SQL_INSTANCE=DB_CLOUD_SQL_INSTANCE:1 \
-            --service-account github-build-deploy-cloudrun@foodshare-376109.iam.gserviceaccount.com \
             --allow-unauthenticated
       # If required, use the Cloud Run url output in later steps
       - name: Show Output
